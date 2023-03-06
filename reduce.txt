@@ -1,0 +1,26 @@
+¿Qué es el método reduce?
+El método reduce JavaScript nos permite, como su nombre indica, reducir el array insertado a un solo valor. Esta reducción se da a partir de una función reduce Javascript que insertamos como parámetro. Es decir, para ejecutar este método usaremos un callback. Además, insertaremos un valor inicial para crear la secuencia de reducción. Te invitamos a leer nuestro post sobre el método reduce de JavaScript para conocer más sobre sus propiedades y funcionamiento.
+
+Al utilizar el método reduce de JavaScript, te recomendamos insertar primero el parámetro de valor inicial. Aunque este parámetro va después del callback, te recomendamos abrir el paréntesis e, inmediatamente, insertar la coma y, después, el valor inicial. Te decimos esto porque es muy fácil olvidar este parámetro cuando escribimos la función reduce Javascript. Entonces, será complejo entender por qué se producen los errores y por qué la función no se ejecuta como queremos.
+
+Ahora que conoces la teoría, te explicaremos cómo utilizar el método reduce de JavaScript en un contexto más práctico.
+
+¿Cómo utilizar el método reduce de JavaScript?
+Utilizar el método reduce de JavaScript nos puede ayudar a crear acumulados de datos. Supongamos que estamos programando un proyecto en el que debemos crear una liga de fútbol. Entonces, cuando queramos crear la de clasificación para definir al ganador, necesitaremos programar una acción que acumule los goles metidos por cada equipo para conocer el número total de goles metidos durante la liga.
+
+Para crear este acumulado, podemos acceder a nuestra clase hipotética footballLeague, que contiene el array ‘teams’. Este array tiene distintos equipos que, a su vez, tienen la propiedad goalsFor. Entonces, podemos escribir las siguientes líneas de código y utilizar el método reduce de JavaScript para crear el acumulado de goles a favor:
+
+const totalGoals = footballLeague.teams.reduce ((accumulated, currentValue) => {
+
+return accumulated + currentValue.goalsFor
+
+}, 0)
+
+console.log (‘Total goals are ${totalGoals}’)
+
+En estas líneas de código hemos definido que la función reduce Javascript empiece con el valor 0 y luego va sumando progresivamente el valor de la propiedad goalsFor de cada equipo. Entonces, lo que hará el método será recorrer el array y sumar el valor de esta propiedad de cada elemento del array para devolvernos un único valor final. Luego, creamos un string con la variable totalGoals para pintar en pantalla el resultado que nos devuelve ese método.
+
+De este modo, podemos utilizar el método reduce de JavaScript para obtener acumulados de las distintas propiedades de los elementos de un array. Ten presente que, además del callback y el initialValue, puedes pasar otros parámetros por este método. Puedes, por ejemplo, añadir el índice para definir en qué elemento debe empezar el recorrido.
+
+Para conocer más sobre los demás parámetros opcionales que puedes agregar, te invitamos a leer el post de la MDN sobre el método reduce.
+
