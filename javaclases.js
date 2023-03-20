@@ -85,4 +85,23 @@ console.log("el resultado de la suma es :"
 
 */
 
+if (true){
+    console.log("verdadero, escribo");
+    
+}
+if(false){
+console.log("nunca voy a escribir")  ;  
 
+
+let edad =18;
+
+if (edad >18){
+    console.log('podes viajar');
+}
+
+if (edad < 18){console.log('podes viajar con un adulto')};
+
+if (edad== 18){console.log('falta poco para que viajes')};
+
+
+//console.log (console.log('============================='))
