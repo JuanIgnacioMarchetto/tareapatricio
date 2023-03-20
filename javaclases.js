@@ -325,3 +325,30 @@ let pass='jojojo';
 if (user=='pepe'&& pass=='12345'&& reco=true){
     console.log()
 }
+
+
+/*var a = 1;
+var b = '2'; //or b = "2"
+var c = true;
+var d = [1,2,3];
+var e = typeof null;
+var f = { name:"Grizzly bear", latinName:"Ursus arctos",  };
+var g = [
+  {name:"banana",type:"fruit"},
+  {name:"apple",type:"fruit"},
+  {name:"carrot",type:"vegetable"},
+  {name:"onion",type:"vegetable"}
+];
+
+output(a);
+output(b);
+output(a + b);
+output(a + parseInt(b));
+output(c);
+output(d[0]);
+output(e);
+output(g[2].name);
+
+function output(msg) {
+  out.innerHTML += msg + "<br/>";
+}*/
