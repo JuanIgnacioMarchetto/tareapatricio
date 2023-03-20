@@ -49,7 +49,7 @@ console.log("mi nombre es : " + nombre + "y mi apellido es "
 const dni=32195989;
 const iva=549855648;
 */
-
+/*
 const iva= 8.21;
 const dni=322199565
 
@@ -82,3 +82,7 @@ console.log("el resultado de la suma es :"
 resultado = uno % dos;
 console.log("el resultado de la suma es :"
 +resultado);
+
+*/
+
+
