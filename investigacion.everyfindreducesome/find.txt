@@ -1,0 +1,37 @@
+
+El método find de JavaScript funciona a partir de la definición de una prueba lógica que se escribe dentro de su paréntesis. Una vez definida esta situación, el método se encargará de encontrar el primer momento en el que es verdadera dentro de los elementos del array enunciado.
+
+A diferencia de otros métodos para manipular los elementos de un array, como el método map en JavaScript, este método de find JavaScript no nos devuelve un nuevo array.
+
+A continuación, te presentamos un ejemplo:
+
+[1, 10, 5, 6].find (val => val > 5)
+
+En la línea de código anterior definimos la prueba lógica val > 5. Entonces, para utilizar el método find de JavaScript insertamos el comando .find después del array o del nombre del array. Este método de find JavaScript recorrerá todos los elementos del array para encontrar el primer elemento que pase esta prueba. En nuestro caso, el primer valor mayor a cinco es 10. Este será el valor que nos devuelve el método. Como mencionamos antes, este método nunca nos devuelve un array, sino un solo elemento.
+
+¿Qué sucede si, al utilizar el método find de JavaScript, no hay un elemento que pase la prueba lógica? En ese caso, obtendremos el valor undefined como resultado devuelto con el find JavaScript:
+
+const arrayNúmeros = [16, 25, 158, 31]
+
+const encontrar = arrayNúmeros.find (val => val > 1033)
+
+console.log (encontrar)
+
+// resultado esperado: undefined
+
+¿Cómo utilizar el método find de JavaScript?
+Además de encontrar valores numéricos, podemos utilizar el método find de JavaScript para encontrar distintos tipos de valores. Podemos, por ejemplo, usarlo para encontrar un string específico para utilizar el método find.
+
+Supongamos que tenemos un array de equipos deportivos. Dentro de este array, queremos encontrar el equipo que está jugando un partido. Para ello, llamamos a las propiedades de la función play que hemos creado en nuestro post sobre programar un partido de fútbol en JavaScript.
+
+Lo más sencillo en esta situación con find en JavaScript es crear una función que se encargue de encontrar el equipo en cuestión usando el método find en JavaScript. En general, desde KeepCoding te recomendamos que, cada vez que puedas, crees funciones que guarden las acciones a ejecutar. Esto te permitirá poder reutilizarlas más adelante con solo llamarlas por su nombre.
+
+A continuación, te mostramos un ejemplo de cómo crearíamos esta función. En este ejemplo, el array de equipos se llama ‘teams’, y llamamos a las propiedades ‘name’ y ‘homeTeamName’ para definir la prueba lógica del find en JavaScript:
+
+udpdateTeams (result)
+
+const homeTeam = this.teams.find (team => team.name === result.homeTeamName)
+
+const awayTeam = this.teams.find (team => team.name === result.awayTeamName)
+
+Lo que hace la función anterior es buscar del método find, entre todos los equipos del array, el primer equipo cuyo nombre sea igual al nombre del equipo local en la función de resultados. Lo mismo sucede con el equipo visitante. De este modo, también podemos utilizar el método find de JavaScript para encontrar valores tipo string.
